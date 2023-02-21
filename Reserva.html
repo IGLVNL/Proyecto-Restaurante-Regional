@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <title>Restaurant Regional</title>
+        <meta charset="UTF-8">
+        <meta name="Keywords" content="restaurant,restaurantes,comidas regionales
+            ,cenar,almorzar,merienda">
+        <meta name="descripcion" content="Restaurant dedicado a los platos regionales
+            mas exquisitos">
+        <meta name="author" content="Ignacio Lopez">
+        <meta name="robots" content="index">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="STYLESHEET" type="text/css" href="Styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li id="header_nav_ul_li_1"><a href="index.html" >
+                        <img src="img/home_FILL1_wght700_GRAD200_opsz48.svg" class="icon">
+                        Principal</a></li>
+                    <li id="header_nav_ul_li_2"><a href="Menus.html" >
+                        <img src="img/emoji_food_beverage_FILL0_wght400_GRAD0_opsz48.svg" class="icon">
+                        Menus</a></li>
+                    <li id="header_nav_ul_li_3"><a href="Reserva.html" >
+                        <img src="img/sell_FILL0_wght400_GRAD0_opsz48.svg" class="icon">
+                        Reservas</a></li>
+                    <li id="header_nav_ul_li_4"><a href="Nosotros.html" >
+                        <img src="img/group_FILL0_wght400_GRAD0_opsz48.svg" class="icon">
+                        Sobre nosotros</a></li>
+                </ul>                 
+                <a href=""><img src="img/local_grocery_store_black_24dp.svg" class="icon" id="carrito"></a>
+            </nav>
+        </header>
+        <div class="body_div">  
+            <article>
+                <h1>
+                    Hacé tu reserva
+                </h1>
+            </article> 
+            <form class="reservaCont">
+                <div class="fecha">
+                    Fecha
+                    <br>
+                    <input type="date">
+                    <br>
+                </div>   
+                <div class="hora">
+                    Hora aproximada de la reserva
+                    <br>
+                    <input type="time">
+                </div>
+                <div class="reservaCant">
+                    Cantidad de Adultos<input type="number" value="0" min="0" max="50">
+                    Cantidad de personas con movilidad reducida<input type="number" value="0" min="0" max="50"> 
+                    Cantidad de niños <input type="number" value="0" min="0" max="50">
+                    <div class="mesa_niños">
+                        Mesa para niños? <br>
+                        Si<input type="radio"  name="mesa">
+                        No<input type="radio"  name="mesa"><br>
+                    </div>
+                </div>
+                    Deseas aclararnos algo para tener encuenta?
+                    <br>
+                    <textarea></textarea>
+                <div  class="reservaButton">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+    <footer>
+        <p>2022 Restaurant Regional  </p>
+        <p>Instagram  </p>
+        <p>Facebook</p>
+    </footer>
+</html>

@@ -1,0 +1,529 @@
+
+@media (max-width: 5000px){
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: rgba(99, 33, 7, 0);
+        color: cornsilk;
+        box-sizing: border-box;
+        padding-top: -200px;
+    }
+    body{  
+        background-repeat: no-repeat;
+        padding: 10px; 
+        background: linear-gradient(rgba(5,7,12,0.5),rgba(5,7,12,0.5)), url("img/e771f1aa478bc2c6919776b93f8b3d2f-1.jpg");
+    }
+    .body_div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 45px;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .icon{
+        width: 40px;
+    }
+    header nav{
+        margin: 5px;
+        width: 100%;
+    }
+    header nav ul{
+        display: flex;
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    header nav ul li{
+        display: flex;
+        flex-direction: row;
+        min-width:fit-content;
+    }
+    header nav ul li a{
+        display: flex;
+        flex-direction: row;
+        font-family: sans-serif;
+        line-height: 2;
+        color: rgb(237, 243, 185);
+        text-align: center;
+        text-shadow: 5px -5px 10px rgb(255, 255, 255);
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        font-size: 125%;
+        padding: 4px;
+        margin-left: 5px;
+    }
+    li:hover > a{
+        color: rgb(255, 255, 255);
+        outline: 3px solid rgb(255, 255, 255);
+        background: rgb(43, 39, 0);
+        transition: all 0.3s;
+    }
+    #carrito{
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+    }
+    #carrito:hover{
+            outline: 3px solid rgb(255, 255, 255);
+            background: rgb(43, 39, 0);
+            transition: all 0.3s;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        color: rgb(245, 255, 152);
+        font-size: 300%;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+    h2{
+        font-size: 200%;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+    article div {
+        margin: 5px;
+        border: 3px solid rgb(173, 2, 2);
+        padding: 5px;
+        width:75%;
+    }
+    article div::first-letter{
+        font-size: 4vw;
+    }
+    article div img{
+        margin-left: 2.5vw;
+        margin-bottom: 2.5vw;
+        float: right;
+        width: 50%;
+    }
+    .card-box {
+        margin:10px;
+        display: flex;
+        flex-direction: row;
+        padding: 1Spx;
+        border: 3px solid rgb(173, 2, 2);
+        width: fit-content;
+        height: 400px;
+        margin-left: 2.5%;
+        justify-content: space-evenly;
+        border-radius: 7.5px;
+        align-items: stretch;
+    }
+    .tag{
+        display: flex;
+        flex-direction: column;
+        margin:2%; 
+        width: 30%;
+        height: 90%;
+        background-color:rgba(0, 0, 0, 0.438);
+        padding: 2.5%;
+        border-radius: 7.5px;
+    }
+    .tag_img{
+        height: 50%;
+        width:100%;
+    }
+    .tag_img img{
+        height: 100%;
+        width:100%;
+    }
+
+    .desc_img{
+        width:100%;
+        min-height: fit-content;
+        height: 50%;
+    }
+    .card-box .tag:hover{
+        width: 40%;
+        font-size: 130%;
+    }
+    #tag1{
+        order: 3;
+    }
+    #tag2{
+        order: 1;
+    }
+    #tag3{
+        order: 2;
+    }
+
+
+    /*Menus*/
+
+    .Menu_option {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 3px solid rgb(173, 2, 2);
+        border-radius: 7.5px;
+        justify-content: space-between;
+        background: linear-gradient(rgba(6, 8, 14, 0.505),rgba(5, 7, 12, 0.541));
+    }
+    .Descripcion {
+        width: 30%;
+        font-size:20px;
+        display: flex;
+        justify-content:center;
+        flex-flow:column;
+        z-index: 0;
+    }
+    .Descripcion ul{
+        display: flex;
+        flex-direction: column;
+        list-style:none;
+    }
+    .Descripcion ul li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .sub {
+        margin: 10px;
+        display: flex;
+        flex-flow:column;
+        justify-content:center;
+        width: 20%;
+    }
+    input{
+        color:rgb(0, 0, 0);
+        border-radius: 5px;
+        width: 100%;
+        height: 15%;
+        font-size: 2vw;
+        background: rgb(210, 210, 210);
+    }
+    input:hover{
+        color:rgb(0, 0, 0);  
+        background: rgb(255, 255, 255);
+        transition: all 0.2s;
+    }
+    .sub form{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Menu_IMG{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 30%;
+        margin: 10px;
+    }
+    .Menu_IMG h2 {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Menu_IMG img{
+        width: 60%;
+        height: 60%;
+        border-radius: 7.5px;
+        display: flex;
+        align-self: center;
+    }
+    .Menu_IMG img:hover{
+        border-radius: 10px;
+        outline: 3px solid rgb(255, 255, 255);
+        transition: box-shadow 0.5s, outline 0.2s, width 0.5s, border-radius 0.5s;
+    }
+
+    /*Menus*/
+
+    /*reserva*/
+    .reservaCont{
+        display: flex;
+        width: 50%;
+        padding: 25px;
+        border: 3px solid rgb(173, 2, 2);
+        justify-content:center;
+        flex-direction: column;
+        background: linear-gradient(rgba(6, 8, 14, 0.35),rgba(5,7,12,0.35));
+        border-radius: 25px;
+        font-size: larger;
+    }
+    .reservaCont textarea{
+        resize: none;
+        overflow: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        height: 150px;
+        background: rgb(210, 210, 210);
+        color: black;
+        padding: 5px;
+        font-size: larger;
+    }
+    
+    .reservaCant{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        justify-content:space-between
+    }
+    .reservaCant input {
+        width: 40%;
+    }
+    .fecha input {
+        height: 30px;
+    }
+    .hora input {
+        height: 30px;
+    }
+    .reservaButton{
+        display: flex;
+        padding: 5px;
+        margin: 10px;
+        justify-content:space-between;
+        justify-content:center
+    }
+    /*reserva*/
+
+    /*nosotros*/
+        .nosotros{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .div_iframe{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            width: 50%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .div_nosotros{
+            display: flex;
+            width: 100%;
+            height: 450px;
+            padding: 10px;
+        }
+    /*nosotros*/
+
+    /* Cantidad de elementos */
+        #SelectorCantidad{
+            visibility: hidden;
+            display: flex;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.509);
+            width: 100%;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            /* visibility: hidden; */
+        }
+        #popUp{
+            display: flex;
+            position: fixed;
+            background-color: rgb(253, 253, 253);
+            width: 50%;
+            height: 50vh;
+            left: 25%;
+            top: 25%;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #popUp button{
+            align-self: center;
+            display: flex; 
+            justify-content: center;
+            width: 12%;
+            height: 20%;
+            background-color: rgb(210, 210, 210);
+            border: 3px solid rgb(118, 118, 118);
+            color: black;
+        }
+        #popUp button:hover{
+            background-color: rgb(174, 174, 174);
+        }
+        #img{
+            padding: 10px;
+            align-self: center;
+            width: 60%;
+            height: 80%;
+            background-color: rgb(80, 237, 148);
+        }
+        #popUp p{
+            width: 16%;
+            text-align: center;
+            align-self: center;
+            background-color: brown;
+        }
+        #close{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        #close:hover{
+            background-color: rgb(174, 174, 174);
+            border-radius: 15px;
+        }
+        #remove{
+            align-self: center;
+        }
+        #add{
+            align-self: center;
+        }
+        #confirm{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        #confirm:hover{
+            background-color: rgb(174, 174, 174);
+            border-radius: 15px;
+        }
+    /* Cantidad de elementos */
+
+}   
+
+@media only screen and (max-width: 800px) {
+    .body_div{
+        margin: 25px;
+    }
+    body{
+        padding: 10px; 
+        overflow: auto; 
+        margin-bottom: 75px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    article div {
+        font-size: 120%;
+    }
+    .card-box{
+        visibility: hidden;
+    }
+    .tag{
+        width: 90%;
+    }
+    .card-box .tag:hover{
+        width: 90%;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        transition: none;
+        height: 25%;
+        font-size: 100%;
+    }
+    
+    header{
+        position: fixed;
+        display: flex;
+        width: 100%;
+        background: rgba(0, 0, 0, 1);
+        font-size: 0%;
+        bottom: 0;
+        top: 85vh;
+        min-height: 2rem;
+        max-height: 15vh;
+    }
+    header nav ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    header nav{
+        display: flex;
+        width: 100%;
+    }
+    header nav ul li {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+    li:hover > a{
+        background: rgba(0, 0, 0, 1);
+    }
+    .Menu_option{
+        flex-direction: column;
+        height: fit-content;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+    }
+    .Descripcion{
+        width: 50%;
+    }
+    .Descripcion ul li{
+        font-size: 120%;
+    }
+    .Menu_IMG{
+        width: 100%;
+        height: 400px;
+        margin: 0%;
+        font-size: 100%;
+    }
+    .Menu_IMG h2 {
+        height: 40px;
+    }
+    .Menu_IMG img {
+        width: 400px;
+        height: 250px;
+    }
+    .Menu_IMG img:hover {
+        box-shadow: none;
+        text-shadow: none;
+        outline: none;
+    }
+    form {
+        height: auto;
+    }
+    .sub input{
+        font-size: 130%;
+    }
+    .sub{
+        margin: 0%;
+        width: 100%;
+    }
+    .sub:hover {
+        width: 100%;
+        transition: width 0.5s;
+    }
+    
+    .reservaCont{
+        width: 100%;
+        font-size: larger;
+    }
+    .reserva{
+        font-size: 150%;
+    }
+    .reservaCant input{
+        width: 20%;
+        height: 100%;
+        font-size: 100%;
+    }
+    .reservaButton input{
+        width: 100%;
+        height: 200%;
+        font-size: 120%;
+    }
+    .div_nosotros{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .div_iframe{
+        width: 100%;
+        height: 450px;
+    }
+}
